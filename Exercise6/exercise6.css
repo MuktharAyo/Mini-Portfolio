@@ -4,7 +4,7 @@
 
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "inter";
     background-color: #1b1b1b;
     color: #333;
     margin: 0;
@@ -309,7 +309,7 @@ position: relative;
 
 .socials a:active,
 .socials i:active{
-    color: #8e08a8;
+    color: #a708c7;
     transform: scale(0.95);
 }
 
@@ -325,6 +325,18 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: #5086fd;
+}
+
+footer a:active{
+    color: #a708c7;
 }
 
 
