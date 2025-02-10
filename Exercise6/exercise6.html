@@ -5,41 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 6: Cohesive Webpage</title>
     <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="exercise6.css">
 </head>
 <body>
 <header><span>Welcome to My <u>Portfolio</u></span></header>
 <!-- Nav Section -->
-<nav>
-<h1 class="logo"><img src="./Images/22.svg" alt=""></h1>
+<!-- <nav>
+<h1 class="logo"></h1>
 <menu>
-<ul>
-    <li><a href="#about">About</a></li>
+<ul> -->
+    <!-- <li><a href="#about">About</a></li>
     <li><a href="#Services">Services</a></li>
     <li><a href="#contact">Contact</a></li>
 </ul>
 </menu>
+</nav> -->
+
+<nav>
+    <div class="logo"><img src="./Images/22.svg" alt=""></div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul class="menu">
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <!-- <li>
+            <a href="#" onclick="closeMenu()">Services</a>
+            <ul class="dropdown">
+                <li><a href="#" onclick="closeMenu()">Web Design</a></li>
+                <li><a href="#" onclick="closeMenu()">Development</a></li>
+                <li><a href="#" onclick="closeMenu()">SEO</a></li>
+            </ul>
+        </li> -->
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
 </nav>
 
 <!-- Main Content -->
 <main>
 <!-- About Section -->
 <section id="about" class="about">
-<div class="img"><img src="./Images/main img.jpg" alt="A placeholder image representing me"></div>
-<div class="text">
     <h>About <u>Me</u></h>
-    <h2>~Web Developer/Designer~</h2>
-    <p>
-        Hi, I’m <b>MuktharAyo</b>, a passionate web developer and designer with a knack for creating visually stunning and highly functional websites. With 2 years of experience in the industry, I specialize in crafting responsive, user-friendly designs and building seamless digital experiences. I thrive on turning ideas into reality, Let’s build something amazing together!
-    </p>
-        
-        <a href="https://wa.me/09059572468" class="button-link" style="margin-top: 8px;">Get in touch</a>
+<div class="about-content">
+    <div class="img"><img src="./Images/Frame 2568.png" alt="A placeholder image representing me"></div>
+    <div class="text">
+        <h2>Hola! I'm Mukthar<span style="color: #5086fd;">Ayo</span>.</h2>
+        <h3>~Web Developer/Designer~</h3>
+        <p>
+            Hi, I’m <b>MuktharAyo</b>, a passionate web developer and designer with a knack for creating visually stunning and highly functional websites. With 2 years of experience in the industry, I specialize in crafting responsive, user-friendly designs and building seamless digital experiences. I thrive on turning ideas into reality, Let’s build something amazing together!
+        </p>
+            
+            <a href="https://wa.me/09059572468" class="button-link" style="margin-top: 8px;">Get in touch</a>
+    </div>
 </div>
 </section>
 
 <!-- Services Section -->
-<section id="Services" class="services">
+<section id="services" class="services">
 <h>Se<u>rvic</u>es</h>
 <p>Now let me show you what i can help
 you with my expertise:</p>
@@ -102,32 +128,37 @@ you with my expertise:</p>
 </div>
 </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h>Contact <u>Me</u></h>
+    <div class="contact-content">
         <div class="text">
-            <h>Contact <u>Me</u></h>
-            <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-            <div class="others">
-                <span><i class="bi bi-telephone-forward-fill"></i>+234 905 957 2468</span>
-                <span><i class="bi bi-envelope-at-fill"></i><a href="mailto:Muktkar.ayo@gmail.com">Muktkar.ayo@gmail.com</a></span>
-            </div>
-            <div class="socials">
-                <a href="https://wa.me/09059572468"><i class="bi bi-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/muktharayo/"><i class="bi bi-linkedin"></i></a>
-                <a href="https://x.com/Ayo_Mukthar"><i class="bi bi-twitter"></i></a>
-                <a href="https://github.com/MuktharAyo"><i class="bi bi-github"></i></a>
-            </div>
-            <a href="https://wa.me/09059572468" class="button-link">Send a DM</a>
+            <span>want to work together?</span>
+            <span>Have a great project you think I'd be a perfect fit for?</span>
+        <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+        <div class="others">
+            <div><i class="bi bi-telephone-forward-fill"></i>+234 905 957 2468</div>
+            <div><i class="bi bi-envelope-at-fill"></i><a href="mailto:Muktkar.ayo@gmail.com">Muktkar.ayo@gmail.com</a></div>
+        </div>
+        <div class="socials">
+            <a href="https://wa.me/09059572468"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/muktharayo/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/Ayo_Mukthar"><i class="bi bi-twitter"></i></a>
+            <a href="https://github.com/MuktharAyo"><i class="bi bi-github"></i></a>
+        </div>
+        <a href="https://wa.me/09059572468" class="button-link">Send a DM</a>
         </div>
         <div class="img">
             <img src="./Images/Contact Image.jpg" alt="">
         </div>
-    </section>
+    </div>
+</section>
 </main>
 
 <!-- Footer Section -->
 <footer>
-    <p>&copy; 2025 Designed & Coded by <a href="https://github.com/MuktharAyo">MuktharAyo</a>. All rights reserved.</p>
+    <p>&copy; 2025. Designed & Coded by <a href="https://github.com/MuktharAyo">MuktharAyo</a>. All rights reserved.</p>
 </footer>
+<script src="exercise6.js"></script>
 </body>
 </html>
